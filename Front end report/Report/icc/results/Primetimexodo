@@ -1,0 +1,14 @@
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Information: Building multi voltage information for entire design. (MV-022)
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:09:06 2023
+****************************************
+
+
+1

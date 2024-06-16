@@ -1,0 +1,16 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-nworst 40
+	-slack_lesser_than 0.0000
+	-max_paths 40
+	-sort_by slack
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:12:36 2023
+****************************************
+
+No constrained paths.
+
+1
