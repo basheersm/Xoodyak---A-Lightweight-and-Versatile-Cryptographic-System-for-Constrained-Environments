@@ -1,0 +1,1723 @@
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : design
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:06:22 2023
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Local Link Library:
+
+    {/home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : TYPICAL
+    Library : saed90nm_typ_ht
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   8000
+Location       :   saed90nm_typ_ht
+Resistance     :   0.0015727
+Capacitance    :   0.000312
+Area           :   0.01
+Slope          :   90.6464
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    13.94
+     2    31.80
+     3    51.61
+     4    73.61
+     5    98.05
+     6   125.17
+     7   155.23
+     8   188.46
+     9   225.12
+    10   265.45
+    11   309.71
+    12   358.13
+    13   410.96
+    14   468.46
+    15   530.86
+    16   598.42
+    17   671.38
+    18   749.98
+    19   834.49
+    20   925.13
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+ 
+****************************************
+Report : hierarchy
+        -noleaf
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:06:29 2023
+****************************************
+
+Johnson_count_1
+ 
+****************************************
+Report : resources
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:06:35 2023
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -max_leakage_power
+        -max_dynamic_power
+        -max_total_power
+        -cell_degradation
+        -max_toggle_rate
+        -max_capacitance
+        -max_fanout
+        -multiport_net
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:06:53 2023
+****************************************
+
+This design has no violated constraints.
+
+ 
+****************************************
+Report : reference
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:07:51 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFARX1            saed90nm_typ_ht
+                                 32.256001       8    258.048004  n
+INVX0              saed90nm_typ_ht
+                                  5.529600       1      5.529600  
+-----------------------------------------------------------------------------
+Total 2 references                                    263.577604
+ 
+****************************************
+Report : port
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:01 2023
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    1.37 3328.00   --         
+r              in      0.0000   0.0000    1.34  208.00   --         
+out[0]         out     0.0040   0.0000   --      --      --         
+out[1]         out     0.0040   0.0000   --      --      --         
+out[2]         out     0.0040   0.0000   --      --      --         
+out[3]         out     0.0040   0.0000   --      --      --         
+out[4]         out     0.0040   0.0000   --      --      --         
+out[5]         out     0.0040   0.0000   --      --      --         
+out[6]         out     0.0040   0.0000   --      --      --         
+out[7]         out     0.0040   0.0000   --      --      --         
+
+ 
+****************************************
+Report : cell
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:09 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        INVX0           saed90nm_typ_ht 5.529600  
+out_reg[0]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[1]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[2]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[3]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[4]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[5]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[6]                DFFARX1         saed90nm_typ_ht 32.256001 n
+out_reg[7]                DFFARX1         saed90nm_typ_ht 32.256001 n
+--------------------------------------------------------------------------------
+Total 9 cells                                             263.577604
+ 
+****************************************
+Report : net
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:25 2023
+****************************************
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Net
+ Fanout    Fanin     Load      LoadUR    LoadUF    LoadLR    LoadLF    Resist    Pins      Attr
+-----------------------------------------------------------------------------------------------
+clk
+      8         1        9.74     10.10      9.39     10.10      9.39      0.30       9    
+n1
+      8         1       28.90     28.05     29.75     28.05     29.75      0.30       9    
+n3
+      1         1        1.48      1.48      1.47      1.48      1.47      0.02       2    
+out[0]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[1]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[2]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[3]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[4]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[5]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[6]
+      2         1        1.49      1.49      1.48      1.49      1.48      0.05       3    
+out[7]
+      1         1        0.01      0.01      0.01      0.01      0.01      0.02       2    
+r
+      1         1        1.87      1.92      1.82      1.92      1.82      0.02       2    
+-----------------------------------------------------------------------------------------------
+Total 12 nets
+     33        12       52.39     51.99     52.80     51.99     52.80      1.01      45
+Maximum
+      8         1       28.90     28.05     29.75     28.05     29.75      0.30       9
+Average
+   2.75      1.00        4.37      4.33      4.40      4.33      4.40      0.08    3.75
+ 
+****************************************
+Report : clocks
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:32 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             20.00   {0 5}               p         {clk}
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:39 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+ 
+****************************************
+Report : compile_options
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:48 2023
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+Johnson_count_1                          flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+Loading db file '/home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:08:55 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  18.1443 nW   (11%)
+  Net Switching Power  = 146.1154 nW   (89%)
+                         ---------
+Total Dynamic Power    = 164.2597 nW  (100%)
+
+Cell Leakage Power     =   3.3287 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       9.7997e-03        3.9004e-02        3.2800e+06            3.3288  (  95.30%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.3447e-03            0.1071        4.8737e+04            0.1642  (   4.70%)
+--------------------------------------------------------------------------------------------------
+Total          1.8144e-02 uW         0.1461 uW     3.3287e+06 pW         3.4930 uW
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:09:16 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (propagated)         0.00      20.00
+  clock uncertainty                       -0.40      19.60
+  output external delay                   -8.00      11.60
+  data required time                                 11.60
+  -----------------------------------------------------------
+  data required time                                 11.60
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                        11.21
+
+
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:09:23 2023
+****************************************
+
+ 
+****************************************
+Report : clock_skew
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:09:30 2023
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk                 -         -         -         -      0.40      0.40
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.80      0.80      0.80      0.80
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : wire loads
+Design : Johnson_count
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:09:39 2023
+****************************************
+
+Wire load model:   ForQA
+Location       :   Johnson_count (design)
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1     8.28                                    
+     2    18.49                                    
+     3    29.35                                    
+     4    40.92                                    
+     5    53.23                                    
+     6    66.36                                    
+     7    80.36                                    
+     8    95.27                                    
+     9   111.17                                    
+    10   128.09                                    
+    11   146.10                                    
+    12   165.26                                    
+    13   185.61                                    
+    14   207.22                                    
+    15   230.13                                    
+    16   254.41                                    
+    17   280.11                                    
+    18   307.28                                    
+    19   335.98                                    
+    20   366.27                                    
+--------------------------------------------------------------
+
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : transitive_fanout
+        -clock_tree
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Sat Feb 11 21:09:46 2023
+****************************************
+
+The fanout network of source clk is as follows:
+
+Driver Pin       Load Pin          Type        Sense
+------------------------------------------------------------
+clk              out_reg[6]/CLK    (net arc)   same
+clk              out_reg[5]/CLK    (net arc)   same
+clk              out_reg[4]/CLK    (net arc)   same
+clk              out_reg[3]/CLK    (net arc)   same
+clk              out_reg[2]/CLK    (net arc)   same
+clk              out_reg[1]/CLK    (net arc)   same
+clk              out_reg[0]/CLK    (net arc)   same
+clk              out_reg[7]/CLK    (net arc)   same
+
+
+Loading db file '/home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db'
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:13:31 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  20.7440 nW   (10%)
+  Net Switching Power  = 182.6422 nW   (90%)
+                         ---------
+Total Dynamic Power    = 203.3862 nW  (100%)
+
+Cell Leakage Power     =   3.3162 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.0313e-02        4.8754e-02        3.2675e+06            3.3266  (  94.51%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.0431e-02            0.1339        4.8737e+04            0.1931  (   5.49%)
+--------------------------------------------------------------------------------------------------
+Total          2.0744e-02 uW         0.1826 uW     3.3162e+06 pW         3.5196 uW
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:13:39 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:13:56 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   16.00      16.00
+  clock network delay (propagated)         0.00      16.00
+  clock uncertainty                       -0.40      15.60
+  output external delay                   -8.00       7.60
+  data required time                                  7.60
+  -----------------------------------------------------------
+  data required time                                  7.60
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                         7.21
+
+
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:23:23 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Loading db file '/home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:23:32 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  15.5044 nW    (4%)
+  Net Switching Power  = 365.3991 nW   (96%)
+                         ---------
+Total Dynamic Power    = 380.9036 nW  (100%)
+
+Cell Leakage Power     =   3.2538 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       -5.3572e-03        9.7622e-02        3.2051e+06            3.2973 (  90.72%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.0862e-02            0.2678        4.8737e+04            0.3374  (   9.28%)
+--------------------------------------------------------------------------------------------------
+Total          1.5504e-02 uW         0.3654 uW     3.2538e+06 pW         3.6347 uW
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:23:43 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (propagated)         0.00       8.00
+  clock uncertainty                       -0.40       7.60
+  output external delay                   -8.00      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.79
+
+
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:24:40 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:24:49 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  15.5044 nW    (4%)
+  Net Switching Power  = 365.3991 nW   (96%)
+                         ---------
+Total Dynamic Power    = 380.9036 nW  (100%)
+
+Cell Leakage Power     =   3.2538 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       -5.3572e-03        9.7622e-02        3.2051e+06            3.2973 (  90.72%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.0862e-02            0.2678        4.8737e+04            0.3374  (   9.28%)
+--------------------------------------------------------------------------------------------------
+Total          1.5504e-02 uW         0.3654 uW     3.2538e+06 pW         3.6347 uW
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:24:56 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (propagated)         0.00       8.00
+  clock uncertainty                       -0.40       7.60
+  output external delay                   -8.00      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.79
+
+
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:28:03 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:28:09 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  92.8645 nW   (11%)
+  Net Switching Power  = 730.5770 nW   (89%)
+                         ---------
+Total Dynamic Power    = 823.4415 nW  (100%)
+
+Cell Leakage Power     =   3.3287 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       5.1141e-02            0.1950        3.2800e+06            3.5262  (  84.92%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.1723e-02            0.5356        4.8737e+04            0.6260  (  15.08%)
+--------------------------------------------------------------------------------------------------
+Total          9.2865e-02 uW         0.7306 uW     3.3287e+06 pW         4.1522 uW
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:28:29 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (propagated)         0.00       4.00
+  clock uncertainty                       -0.40       3.60
+  output external delay                   -8.00      -4.40
+  data required time                                 -4.40
+  -----------------------------------------------------------
+  data required time                                 -4.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.79
+
+
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:29:17 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:29:26 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 103.8091 nW    (7%)
+  Net Switching Power  =   1.4614 uW   (93%)
+                         ---------
+Total Dynamic Power    =   1.5653 uW  (100%)
+
+Cell Leakage Power     =   3.2788 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.0363e-02            0.3903        3.2301e+06            3.6408  (  75.16%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.3447e-02            1.0711        4.8737e+04            1.2033  (  24.84%)
+--------------------------------------------------------------------------------------------------
+Total              0.1038 uW         1.4614 uW     3.2788e+06 pW         4.8441 uW
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 20:29:35 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (propagated)         0.00       2.00
+  clock uncertainty                       -0.40       1.60
+  output external delay                   -8.00      -6.40
+  data required time                                 -6.40
+  -----------------------------------------------------------
+  data required time                                 -6.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -6.79
+
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:08:04 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  20.7440 nW   (10%)
+  Net Switching Power  = 182.6422 nW   (90%)
+                         ---------
+Total Dynamic Power    = 203.3862 nW  (100%)
+
+Cell Leakage Power     =   3.3162 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.0313e-02        4.8754e-02        3.2675e+06            3.3266  (  94.51%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.0431e-02            0.1339        4.8737e+04            0.1931  (   5.49%)
+--------------------------------------------------------------------------------------------------
+Total          2.0744e-02 uW         0.1826 uW     3.3162e+06 pW         3.5196 uW
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:08:45 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:08:57 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   16.00      16.00
+  clock network delay (propagated)         0.00      16.00
+  clock uncertainty                       -0.40      15.60
+  output external delay                   -8.00       7.60
+  data required time                                  7.60
+  -----------------------------------------------------------
+  data required time                                  7.60
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                         7.21
+
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:10:09 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  15.5044 nW    (4%)
+  Net Switching Power  = 365.3991 nW   (96%)
+                         ---------
+Total Dynamic Power    = 380.9036 nW  (100%)
+
+Cell Leakage Power     =   3.2538 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       -5.3572e-03        9.7622e-02        3.2051e+06            3.2973 (  90.72%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  2.0862e-02            0.2678        4.8737e+04            0.3374  (   9.28%)
+--------------------------------------------------------------------------------------------------
+Total          1.5504e-02 uW         0.3654 uW     3.2538e+06 pW         3.6347 uW
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:10:16 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:10:26 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (propagated)         0.00       8.00
+  clock uncertainty                       -0.40       7.60
+  output external delay                   -8.00      -0.40
+  data required time                                 -0.40
+  -----------------------------------------------------------
+  data required time                                 -0.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.79
+
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:11:20 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  92.8645 nW   (11%)
+  Net Switching Power  = 730.5770 nW   (89%)
+                         ---------
+Total Dynamic Power    = 823.4415 nW  (100%)
+
+Cell Leakage Power     =   3.3287 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       5.1141e-02            0.1950        3.2800e+06            3.5262  (  84.92%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.1723e-02            0.5356        4.8737e+04            0.6260  (  15.08%)
+--------------------------------------------------------------------------------------------------
+Total          9.2865e-02 uW         0.7306 uW     3.3287e+06 pW         4.1522 uW
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:11:27 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:11:37 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (propagated)         0.00       4.00
+  clock uncertainty                       -0.40       3.60
+  output external delay                   -8.00      -4.40
+  data required time                                 -4.40
+  -----------------------------------------------------------
+  data required time                                 -4.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.79
+
+
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:12:02 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Johnson_count_1        8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 103.8091 nW    (7%)
+  Net Switching Power  =   1.4614 uW   (93%)
+                         ---------
+Total Dynamic Power    =   1.5653 uW  (100%)
+
+Cell Leakage Power     =   3.2788 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       2.0363e-02            0.3903        3.2301e+06            3.6408  (  75.16%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.3447e-02            1.0711        4.8737e+04            1.2033  (  24.84%)
+--------------------------------------------------------------------------------------------------
+Total              0.1038 uW         1.4614 uW     3.2788e+06 pW         4.8441 uW
+ 
+****************************************
+Report : area
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:12:08 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/dc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                            9
+Number of combinational cells:              1
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  5.529600
+Buf/Inv area:                        5.529600
+Noncombinational area:             258.048004
+Macro/Black Box area:                0.000000
+Net Interconnect area:               6.413711
+
+Total cell area:                   263.577604
+Total area:                        269.991315
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Johnson_count_1
+Version: Q-2019.12-SP5
+Date   : Mon Feb 27 21:12:18 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Johnson_count_1    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.05       0.05
+  out_reg[0]/CLK (DFFARX1)                 0.00       0.05 r
+  out_reg[0]/Q (DFFARX1)                   0.34       0.39 f
+  out[0] (out)                             0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (propagated)         0.00       2.00
+  clock uncertainty                       -0.40       1.60
+  output external delay                   -8.00      -6.40
+  data required time                                 -6.40
+  -----------------------------------------------------------
+  data required time                                 -6.40
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -6.79
+
+
