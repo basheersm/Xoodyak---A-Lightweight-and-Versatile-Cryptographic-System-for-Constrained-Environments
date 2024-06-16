@@ -51,7 +51,7 @@ We welcome contributions to improve Xoodyak. Feel free to submit pull requests w
 
 **License:**
 
-This project is licensed under the [License Name] license. See the `LICENSE` file for details.
+This project is licensed under the MIT license. See the `LICENSE` file for details.
 
 **Disclaimer:**
 
