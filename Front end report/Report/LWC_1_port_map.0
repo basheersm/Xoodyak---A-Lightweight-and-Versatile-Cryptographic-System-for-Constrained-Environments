@@ -1,0 +1,13 @@
+guide_constraints -body { Inst_Cipher/cyc_ops } -equivalent { Inst_Cipher/cyc_ops/extract_sel    Inst_Cipher/cyc_ops/IN0 }
+set_user_match   -inverted   $svf_ref/LWC_1/Inst_PostProcessor/SegLen/len   $svf_impl/LWC_1/Inst_PostProcessor/SegLen/len
+set_user_match   -inverted   $svf_ref/LWC_1/Inst_PreProcessor/rst   $svf_impl/LWC_1/Inst_PreProcessor/rst
+set_user_match   -inverted   $svf_ref/LWC_1/Inst_Cipher/rst   $svf_impl/LWC_1/Inst_Cipher/rst
+set_user_match   -inverted   $svf_ref/LWC_1/Inst_PostProcessor/rst   $svf_impl/LWC_1/Inst_PostProcessor/rst
+set_user_match   -inverted   $svf_ref/LWC_1/Inst_Header_Fifo/rst   $svf_impl/LWC_1/Inst_Header_Fifo/rst
+guide_constraints -body { Inst_Cipher } -equivalent { Inst_Cipher/rst  ~ Inst_Cipher/IN0 }
+guide_constraints -body { Inst_PreProcessor } -equivalent { Inst_PreProcessor/rst  ~ Inst_PreProcessor/IN0 }
+guide_constraints -body { Inst_Header_Fifo } -equivalent { Inst_Header_Fifo/rst  ~ Inst_Header_Fifo/IN0 }
+guide_constraints -body { Inst_PostProcessor } -equivalent { Inst_PostProcessor/rst  ~ Inst_PostProcessor/IN0 }
+
+#-------------------------------------------------------------------
+
