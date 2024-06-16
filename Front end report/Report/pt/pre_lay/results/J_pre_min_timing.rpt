@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-nworst 40
+	-slack_lesser_than 0.0000
+	-max_paths 40
+	-sort_by slack
+Design : Johnson_count
+Version: Q-2019.12-SP5
+Date   : Mon Mar 13 22:47:15 2023
+****************************************
+
+
+  Startpoint: out_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (propagated)       0.0522     0.0522
+  out_reg[7]/CLK (SDFFARX1)              0.0000     0.0522 r
+  out_reg[7]/QN (SDFFARX1)               0.2085     0.2607 f
+  out_reg[0]/D (SDFFARX1)                0.0297     0.2904 f
+  data arrival time                                 0.2904
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (propagated)       0.0522     0.0522
+  clock reconvergence pessimism          0.0000     0.0522
+  clock uncertainty                      0.4000     0.4522
+  out_reg[0]/CLK (SDFFARX1)                         0.4522 r
+  library hold time                     -0.1298     0.3225
+  data required time                                0.3225
+  ---------------------------------------------------------------
+  data required time                                0.3225
+  data arrival time                                -0.2904
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                 -0.0320
+
+
+1

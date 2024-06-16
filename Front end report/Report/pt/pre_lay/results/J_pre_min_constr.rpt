@@ -1,0 +1,19 @@
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : Johnson_count
+Version: Q-2019.12-SP5
+Date   : Mon Mar 13 22:47:15 2023
+****************************************
+
+
+
+   min_delay/hold ('clk' group)
+
+   Endpoint                                                  Slack
+   -----------------------------------------------------------------
+   out_reg[0]/D                                            -0.0320  (VIOLATED)
+
+
+1

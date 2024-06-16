@@ -1,0 +1,16 @@
+
+read_verilog [list ../source/Johnson_count.v]
+
+current_design Johnson_count
+link
+
+read_sdc ../source/constr.sdc
+
+set_case_analysis 0 [get_port r]
+set_case_analysis 0 [get_port SE]
+
+report_constraint -all_violators -significant_digits 4 > ../results/J_post_max_constr.rpt
+report_timing -delay_type max -nworst 40 -significant_digits 4 > ../results/J_post_max_timing.rpt
+write_sdf ../results/Johnson_count_post_max.sdf
+
+
