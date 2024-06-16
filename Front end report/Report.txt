@@ -1,0 +1,1900 @@
+ ****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:20:11 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/E_dcount/count_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: do_data[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC                ForQA                 saed32rvt_tt1p05v25c
+  CryptoCore         ForQA                 saed32rvt_tt1p05v25c
+  DW01_cmp2_width32  ForQA                 saed32rvt_tt1p05v25c
+  cyclist_ops        ForQA                 saed32rvt_tt1p05v25c
+  PostProcessor      ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  Inst_Cipher/E_dcount/count_reg[0]/clocked_on (**SEQGEN**)
+                                                          0.00 #     0.00 r
+  Inst_Cipher/E_dcount/count_reg[0]/Q (**SEQGEN**)        0.00       0.00 f
+  Inst_Cipher/E_dcount/q[0] (counter_num_bits4)           0.00       0.00 f
+  Inst_Cipher/lt_266/A_0 (*LT_TC_OP_32_5_1)               0.00       0.00 f
+  Inst_Cipher/lt_266/*cell*48/A[0] (DW01_cmp2_width32)
+                                                          0.00       0.00 f
+  ...
+  Inst_Cipher/lt_266/*cell*48/LT_LE (DW01_cmp2_width32)
+                                                          0.25       0.25 r
+  Inst_Cipher/lt_266/Z_0 (*LT_TC_OP_32_5_1)               0.00       0.25 r
+  Inst_Cipher/C1731/Z (GTECH_AND2)                        0.00       0.26 r
+  Inst_Cipher/C1730/Z (GTECH_OR2)                         0.00       0.26 r
+  Inst_Cipher/C1821/Z (GTECH_AND2)                        0.00       0.26 r
+  Inst_Cipher/C1820/Z (GTECH_AND2)                        0.00       0.27 r
+  Inst_Cipher/B_39/Z (GTECH_BUF)                          0.01       0.27 r
+  Inst_Cipher/C1637/Z_0 (*SELECT_OP_2.2_2.1_2)            0.01       0.28 r
+  Inst_Cipher/C1695/Z_0 (*SELECT_OP_8.2_8.1_2)            0.00       0.28 r
+  Inst_Cipher/cyc_ops/cycd_sel[0] (cyclist_ops)           0.00       0.28 r
+  Inst_Cipher/cyc_ops/I_8/Z (GTECH_NOT)                   0.01       0.29 f
+  Inst_Cipher/cyc_ops/C167/Z (GTECH_OR2)                  0.00       0.29 f
+  Inst_Cipher/cyc_ops/I_5/Z (GTECH_NOT)                   0.00       0.30 r
+  Inst_Cipher/cyc_ops/B_0/Z (GTECH_BUF)                   0.00       0.30 r
+  Inst_Cipher/cyc_ops/C459/Z_7 (*SELECT_OP_4.25_4.1_25)
+                                                          0.00       0.31 r
+  Inst_Cipher/cyc_ops/C460/Z_7 (*SELECT_OP_4.32_4.1_32)
+                                                          0.00       0.31 r
+  Inst_Cipher/cyc_ops/C500/Z (GTECH_XOR2)                 0.00       0.31 r
+  Inst_Cipher/cyc_ops/C461/Z_7 (*SELECT_OP_2.32_2.1_32)
+                                                          0.00       0.32 r
+  Inst_Cipher/cyc_ops/bdo_out[7] (cyclist_ops)            0.00       0.32 r
+  Inst_Cipher/bdo[31] (CryptoCore)                        0.00       0.32 r
+  Inst_PostProcessor/bdo[31] (PostProcessor)              0.00       0.32 r
+  Inst_PostProcessor/C637/Z (GTECH_AND2)                  0.01       0.32 r
+  Inst_PostProcessor/bdoSIPO/data_s[31] (DATA_SIPO)       0.00       0.32 r
+  Inst_PostProcessor/bdoSIPO/data_p[31] (DATA_SIPO)       0.00       0.32 r
+  Inst_PostProcessor/C625/Z_31 (*SELECT_OP_8.32_8.1_32)
+                                                          0.01       0.33 r
+  Inst_PostProcessor/C609/Z_31 (*SELECT_OP_2.32_2.1_32)
+                                                          0.00       0.33 r
+  Inst_PostProcessor/do_data[31] (PostProcessor)          0.00       0.33 r
+  do_data[31] (out)                                       0.00       0.34 r
+  data arrival time                                                  0.34
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:20:41 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/E_dcount/count_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: do_data[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC                ForQA                 saed32rvt_tt1p05v25c
+  CryptoCore         ForQA                 saed32rvt_tt1p05v25c
+  DW01_cmp2_width32  ForQA                 saed32rvt_tt1p05v25c
+  cyclist_ops        ForQA                 saed32rvt_tt1p05v25c
+  PostProcessor      ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  Inst_Cipher/E_dcount/count_reg[0]/clocked_on (**SEQGEN**)
+                                                          0.00 #     0.00 r
+  Inst_Cipher/E_dcount/count_reg[0]/Q (**SEQGEN**)        0.00       0.00 f
+  Inst_Cipher/E_dcount/q[0] (counter_num_bits4)           0.00       0.00 f
+  Inst_Cipher/lt_266/A_0 (*LT_TC_OP_32_5_1)               0.00       0.00 f
+  Inst_Cipher/lt_266/*cell*48/A[0] (DW01_cmp2_width32)
+                                                          0.00       0.00 f
+  ...
+  Inst_Cipher/lt_266/*cell*48/LT_LE (DW01_cmp2_width32)
+                                                          0.25       0.25 r
+  Inst_Cipher/lt_266/Z_0 (*LT_TC_OP_32_5_1)               0.00       0.25 r
+  Inst_Cipher/C1731/Z (GTECH_AND2)                        0.00       0.26 r
+  Inst_Cipher/C1730/Z (GTECH_OR2)                         0.00       0.26 r
+  Inst_Cipher/C1821/Z (GTECH_AND2)                        0.00       0.26 r
+  Inst_Cipher/C1820/Z (GTECH_AND2)                        0.00       0.27 r
+  Inst_Cipher/B_39/Z (GTECH_BUF)                          0.01       0.27 r
+  Inst_Cipher/C1637/Z_0 (*SELECT_OP_2.2_2.1_2)            0.01       0.28 r
+  Inst_Cipher/C1695/Z_0 (*SELECT_OP_8.2_8.1_2)            0.00       0.28 r
+  Inst_Cipher/cyc_ops/cycd_sel[0] (cyclist_ops)           0.00       0.28 r
+  Inst_Cipher/cyc_ops/I_8/Z (GTECH_NOT)                   0.01       0.29 f
+  Inst_Cipher/cyc_ops/C167/Z (GTECH_OR2)                  0.00       0.29 f
+  Inst_Cipher/cyc_ops/I_5/Z (GTECH_NOT)                   0.00       0.30 r
+  Inst_Cipher/cyc_ops/B_0/Z (GTECH_BUF)                   0.00       0.30 r
+  Inst_Cipher/cyc_ops/C459/Z_7 (*SELECT_OP_4.25_4.1_25)
+                                                          0.00       0.31 r
+  Inst_Cipher/cyc_ops/C460/Z_7 (*SELECT_OP_4.32_4.1_32)
+                                                          0.00       0.31 r
+  Inst_Cipher/cyc_ops/C500/Z (GTECH_XOR2)                 0.00       0.31 r
+  Inst_Cipher/cyc_ops/C461/Z_7 (*SELECT_OP_2.32_2.1_32)
+                                                          0.00       0.32 r
+  Inst_Cipher/cyc_ops/bdo_out[7] (cyclist_ops)            0.00       0.32 r
+  Inst_Cipher/bdo[31] (CryptoCore)                        0.00       0.32 r
+  Inst_PostProcessor/bdo[31] (PostProcessor)              0.00       0.32 r
+  Inst_PostProcessor/C637/Z (GTECH_AND2)                  0.01       0.32 r
+  Inst_PostProcessor/bdoSIPO/data_s[31] (DATA_SIPO)       0.00       0.32 r
+  Inst_PostProcessor/bdoSIPO/data_p[31] (DATA_SIPO)       0.00       0.32 r
+  Inst_PostProcessor/C625/Z_31 (*SELECT_OP_8.32_8.1_32)
+                                                          0.01       0.33 r
+  Inst_PostProcessor/C609/Z_31 (*SELECT_OP_2.32_2.1_32)
+                                                          0.00       0.33 r
+  Inst_PostProcessor/do_data[31] (PostProcessor)          0.00       0.33 r
+  do_data[31] (out)                                       0.00       0.34 r
+  data arrival time                                                  0.34
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_4_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_32_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_5_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_5_1_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC_1' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:38:18 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: Inst_Cipher/calling_state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC_1              ForQA                 saed32rvt_tt1p05v25c
+  CryptoCore         ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.85       0.85 r
+  rst (in)                                                0.00       0.85 r
+  Inst_Cipher/rst (CryptoCore)                            0.00       0.85 r
+  Inst_Cipher/I_88/Z (GTECH_NOT)                          0.01       0.86 f
+  Inst_Cipher/C1894/Z (GTECH_AND2)                        0.01       0.87 f
+  Inst_Cipher/C1895/Z (GTECH_AND2)                        0.00       0.87 f
+  Inst_Cipher/C1901/Z (GTECH_OR2)                         0.00       0.88 f
+  Inst_Cipher/C1902/Z (GTECH_OR2)                         0.00       0.88 f
+  Inst_Cipher/C1903/Z (GTECH_OR2)                         0.00       0.88 f
+  Inst_Cipher/C1905/Z (GTECH_OR2)                         0.00       0.89 f
+  Inst_Cipher/C1906/Z (GTECH_OR2)                         0.00       0.89 f
+  Inst_Cipher/C1907/Z (GTECH_OR2)                         0.00       0.90 f
+  Inst_Cipher/C1908/Z (GTECH_OR2)                         0.00       0.90 f
+  Inst_Cipher/I_91/Z (GTECH_NOT)                          0.00       0.90 r
+  Inst_Cipher/calling_state_reg[0]/synch_enable (**SEQGEN**)
+                                                          0.01       0.91 r
+  data arrival time                                                  0.91
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.05      10.05
+  clock uncertainty                                      -0.40       9.65
+  Inst_Cipher/calling_state_reg[0]/clocked_on (**SEQGEN**)
+                                                          0.00       9.65 r
+  library setup time                                      0.00       9.65
+  data required time                                                 9.65
+  --------------------------------------------------------------------------
+  data required time                                                 9.65
+  data arrival time                                                 -0.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.74
+
+
+ 
+****************************************
+Report : hierarchy
+        -noleaf
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:38:34 2023
+****************************************
+
+Information: This design contains unmapped logic. (RPT-7)
+
+LWC_1
+    CryptoCore
+        *LEQ_TC_OP_32_3_1
+            DW01_cmp2_width32
+        *LT_TC_OP_32_4_1
+            DW01_cmp2_width32
+        *LT_TC_OP_32_5_1
+            DW01_cmp2_width32
+        *NE_UNS_OP_32_32_1
+            DW01_cmp6_width32
+        DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+        counter_num_bits4
+            *ADD_UNS_OP_4_1_4
+                DW01_inc_width4
+        counter_num_bits5
+            *ADD_UNS_OP_5_1_5
+                DW01_inc_width5
+        cyclist_ops
+        xoodoo_round
+    PostProcessor
+        *LEQ_UNS_OP_16_16_1
+            DW01_cmp2_width16
+        DATA_SIPO
+        StepDownCountLd_N16_step4
+            *SUB_UNS_OP_16_3_16
+                DW01_sub_width16
+    PreProcessor
+        *LEQ_UNS_OP_16_16_1
+            ...
+        DATA_PISO
+        KEY_PISO
+        StepDownCountLd_N16_step4
+            ...
+    fwft_fifo_G_W32_G_LOG2DEPTH2
+        *ADD_TC_OP_2_2_2
+            DW01_inc_width2
+        *ADD_TC_OP_3_2_3
+            DW01_inc_width3
+        *GEQ_TC_OP_3_3_1
+            DW01_cmp2_width3
+        *GEQ_TC_OP_4_4_1
+            DW01_cmp2_width4
+        *LEQ_TC_OP_4_1_1
+            DW01_cmp2_width4
+        *SUB_TC_OP_3_2_3
+            DW01_dec_width3
+ 
+****************************************
+Report : cell
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:38:40 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Inst_Cipher               CryptoCore                      0.000000  h, n, u
+Inst_Header_Fifo          fwft_fifo_G_W32_G_LOG2DEPTH2    0.000000  h, n, p, u
+Inst_PostProcessor        PostProcessor                   0.000000  h, n, u
+Inst_PreProcessor         PreProcessor                    0.000000  h, n, u
+--------------------------------------------------------------------------------
+Total 4 cells                                             0.000000
+ 
+****************************************
+Report : area
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:38:47 2023
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /opt/cec/synopsys/syn/Q-2019.12-SP5/libraries/syn/gtech.db)
+
+Number of ports:                         3198
+Number of nets:                          9919
+Number of cells:                         5835
+Number of combinational cells:           3251
+Number of sequential cells:              2489
+Number of macros/black boxes:               0
+Number of buf/inv:                        802
+Number of references:                       4
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8369.002115
+
+Total cell area:                     0.000000
+Total area:                       8369.002115
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:38:56 2023
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /opt/cec/synopsys/syn/Q-2019.12-SP5/libraries/syn/gtech.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC_1                  ForQA             saed32rvt_tt1p05v25c
+PreProcessor           ForQA             saed32rvt_tt1p05v25c
+CryptoCore             ForQA             saed32rvt_tt1p05v25c
+PostProcessor          ForQA             saed32rvt_tt1p05v25c
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       ForQA             saed32rvt_tt1p05v25c
+StepDownCountLd_N16_step4
+                       ForQA             saed32rvt_tt1p05v25c
+KEY_PISO               ForQA             saed32rvt_tt1p05v25c
+DATA_PISO              ForQA             saed32rvt_tt1p05v25c
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       ForQA             saed32rvt_tt1p05v25c
+xoodoo_round           ForQA             saed32rvt_tt1p05v25c
+counter_num_bits4      ForQA             saed32rvt_tt1p05v25c
+counter_num_bits5      ForQA             saed32rvt_tt1p05v25c
+cyclist_ops            ForQA             saed32rvt_tt1p05v25c
+DATA_SIPO              ForQA             saed32rvt_tt1p05v25c
+*LEQ_UNS_OP_16_16_1    ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width16      ForQA             saed32rvt_tt1p05v25c
+*LT_TC_OP_32_5_1       ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width32      ForQA             saed32rvt_tt1p05v25c
+*LT_TC_OP_32_4_1       ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width32      ForQA             saed32rvt_tt1p05v25c
+*LEQ_TC_OP_32_3_1      ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width32      ForQA             saed32rvt_tt1p05v25c
+*NE_UNS_OP_32_32_1     ForQA             saed32rvt_tt1p05v25c
+DW01_cmp6_width32      ForQA             saed32rvt_tt1p05v25c
+DW01_cmp6_width32      ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width16      ForQA             saed32rvt_tt1p05v25c
+*GEQ_TC_OP_4_4_1       ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width4       ForQA             saed32rvt_tt1p05v25c
+*LEQ_TC_OP_4_1_1       ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width4       ForQA             saed32rvt_tt1p05v25c
+*ADD_TC_OP_3_2_3       ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width3        ForQA             saed32rvt_tt1p05v25c
+*SUB_TC_OP_3_2_3       ForQA             saed32rvt_tt1p05v25c
+DW01_dec_width3        ForQA             saed32rvt_tt1p05v25c
+*GEQ_TC_OP_3_3_1       ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width3       ForQA             saed32rvt_tt1p05v25c
+*ADD_TC_OP_2_2_2       ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width2        ForQA             saed32rvt_tt1p05v25c
+DW01_cmp2_width3       ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width2        ForQA             saed32rvt_tt1p05v25c
+*SUB_UNS_OP_16_3_16    ForQA             saed32rvt_tt1p05v25c
+DW01_sub_width16       ForQA             saed32rvt_tt1p05v25c
+*ADD_UNS_OP_4_1_4      ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width4        ForQA             saed32rvt_tt1p05v25c
+*ADD_UNS_OP_5_1_5      ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width5        ForQA             saed32rvt_tt1p05v25c
+DW01_inc_width4        ForQA             saed32rvt_tt1p05v25c
+DW01_sub_width16       ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  17.3815 uW  (100%)
+                         ---------
+Total Dynamic Power    =  17.3815 uW  (100%)
+
+Cell Leakage Power     =   0.0000 pW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.4607            0.0000            0.4607  (   2.65%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           16.9207            0.0000           16.9207  (  97.35%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        17.3815 uW         0.0000 pW        17.3815 uW
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : wire loads
+Design : counter
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:39:06 2023
+****************************************
+
+Wire load model:   ForQA
+Location       :   counter (design)
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1     8.28                                    
+     2    18.49                                    
+     3    29.35                                    
+     4    40.92                                    
+     5    53.23                                    
+     6    66.36                                    
+     7    80.36                                    
+     8    95.27                                    
+     9   111.17                                    
+    10   128.09                                    
+    11   146.10                                    
+    12   165.26                                    
+    13   185.61                                    
+    14   207.22                                    
+    15   230.13                                    
+    16   254.41                                    
+    17   280.11                                    
+    18   307.28                                    
+    19   335.98                                    
+    20   366.27                                    
+--------------------------------------------------------------
+
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_4_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_32_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_5_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_5_1_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC_1' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : constraint
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:39:46 2023
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)            0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    min_capacitance                                  0.00 (MET)
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  0.00 (MET)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+
+
+ 
+****************************************
+Report : constraint
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:39:58 2023
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)            0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    min_capacitance                                  0.00 (MET)
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  0.00 (MET)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+
+
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_2_2_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_dec_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_TC_OP_3_2_3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width3' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_3_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_4_1_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_TC_OP_4_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp6_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*NE_UNS_OP_32_32_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_TC_OP_32_3_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_4_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width32' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LT_TC_OP_32_5_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_5_1_5' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_4_1_4' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*LEQ_UNS_OP_16_16_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_16_3_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:42:33 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/E_dcount/count_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Inst_Cipher/msg_auth_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC                ForQA                 saed90nm_typ_ht
+  CryptoCore         ForQA                 saed90nm_typ_ht
+  DW01_cmp2_width32  ForQA                 saed90nm_typ_ht
+  cyclist_ops        ForQA                 saed90nm_typ_ht
+  DW01_cmp6_width32  ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.37       0.37
+  Inst_Cipher/E_dcount/count_reg[0]/clocked_on (**SEQGEN**)
+                                                          0.00 #     0.37 r
+  Inst_Cipher/E_dcount/count_reg[0]/Q (**SEQGEN**)        0.00       0.37 f
+  Inst_Cipher/E_dcount/q[0] (counter_num_bits4)           0.00       0.37 f
+  Inst_Cipher/lt_266/A_0 (*LT_TC_OP_32_5_1)               0.00       0.37 f
+  Inst_Cipher/lt_266/*cell*184/A[0] (DW01_cmp2_width32)
+                                                          0.00       0.37 f
+  ...
+  Inst_Cipher/lt_266/*cell*184/LT_LE (DW01_cmp2_width32)
+                                                          0.25       0.62 r
+  Inst_Cipher/lt_266/Z_0 (*LT_TC_OP_32_5_1)               0.00       0.62 r
+  Inst_Cipher/C1731/Z (GTECH_AND2)                        0.00       0.63 r
+  Inst_Cipher/C1730/Z (GTECH_OR2)                         0.00       0.63 r
+  Inst_Cipher/C1821/Z (GTECH_AND2)                        0.00       0.64 r
+  Inst_Cipher/C1820/Z (GTECH_AND2)                        0.00       0.64 r
+  Inst_Cipher/B_39/Z (GTECH_BUF)                          0.01       0.65 r
+  Inst_Cipher/C1637/Z_0 (*SELECT_OP_2.2_2.1_2)            0.01       0.65 r
+  Inst_Cipher/C1695/Z_0 (*SELECT_OP_8.2_8.1_2)            0.00       0.66 r
+  Inst_Cipher/cyc_ops/cycd_sel[0] (cyclist_ops)           0.00       0.66 r
+  Inst_Cipher/cyc_ops/I_8/Z (GTECH_NOT)                   0.01       0.66 f
+  Inst_Cipher/cyc_ops/C167/Z (GTECH_OR2)                  0.00       0.67 f
+  Inst_Cipher/cyc_ops/I_5/Z (GTECH_NOT)                   0.00       0.67 r
+  Inst_Cipher/cyc_ops/B_0/Z (GTECH_BUF)                   0.00       0.67 r
+  Inst_Cipher/cyc_ops/C459/Z_1 (*SELECT_OP_4.25_4.1_25)
+                                                          0.00       0.68 r
+  Inst_Cipher/cyc_ops/C460/Z_1 (*SELECT_OP_4.32_4.1_32)
+                                                          0.00       0.68 r
+  Inst_Cipher/cyc_ops/C506/Z (GTECH_XOR2)                 0.00       0.69 r
+  Inst_Cipher/cyc_ops/C461/Z_1 (*SELECT_OP_2.32_2.1_32)
+                                                          0.00       0.69 r
+  Inst_Cipher/cyc_ops/bdo_out[1] (cyclist_ops)            0.00       0.69 r
+  Inst_Cipher/ne_590/B_1 (*NE_UNS_OP_32_32_1)             0.00       0.69 r
+  Inst_Cipher/ne_590/*cell*195/B[1] (DW01_cmp6_width32)
+                                                          0.00       0.69 r
+  ...
+  Inst_Cipher/ne_590/*cell*195/NE (DW01_cmp6_width32)     0.25       0.94 r
+  Inst_Cipher/ne_590/Z_0 (*NE_UNS_OP_32_32_1)             0.00       0.94 r
+  Inst_Cipher/B_54/Z (GTECH_BUF)                          0.00       0.95 r
+  Inst_Cipher/C1659/Z_0 (*SELECT_OP_2.1_2.1_1)            0.00       0.95 r
+  Inst_Cipher/C1662/Z_0 (*SELECT_OP_2.1_2.1_1)            0.00       0.95 r
+  Inst_Cipher/C1666/Z_0 (*SELECT_OP_2.1_2.1_1)            0.00       0.96 r
+  Inst_Cipher/C1670/Z_0 (*SELECT_OP_2.1_2.1_1)            0.00       0.96 r
+  Inst_Cipher/C1705/Z_0 (*SELECT_OP_8.1_8.1_1)            0.00       0.96 r
+  Inst_Cipher/C1707/Z_0 (*SELECT_OP_2.1_2.1_1)            0.00       0.97 r
+  Inst_Cipher/msg_auth_reg/next_state (**SEQGEN**)        0.00       0.97 r
+  data arrival time                                                  0.97
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (propagated)                        0.37      10.37
+  clock uncertainty                                      -0.40       9.97
+  Inst_Cipher/msg_auth_reg/clocked_on (**SEQGEN**)        0.00       9.97 r
+  library setup time                                      0.00       9.97
+  data required time                                                 9.97
+  --------------------------------------------------------------------------
+  data required time                                                 9.97
+  data arrival time                                                 -0.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.00
+
+
+ 
+****************************************
+Report : hierarchy
+        -noleaf
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:42:39 2023
+****************************************
+
+Information: This design contains unmapped logic. (RPT-7)
+
+LWC
+    CryptoCore
+        *LEQ_TC_OP_32_3_1
+            DW01_cmp2_width32
+        *LT_TC_OP_32_4_1
+            DW01_cmp2_width32
+        *LT_TC_OP_32_5_1
+            DW01_cmp2_width32
+        *NE_UNS_OP_32_32_1
+            DW01_cmp6_width32
+        DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+        counter_num_bits4
+            *ADD_UNS_OP_4_1_4
+                DW01_inc_width4
+        counter_num_bits5
+            *ADD_UNS_OP_5_1_5
+                DW01_inc_width5
+        cyclist_ops
+        xoodoo_round
+    PostProcessor
+        *LEQ_UNS_OP_16_16_1
+            DW01_cmp2_width16
+        DATA_SIPO
+        StepDownCountLd_N16_step4
+            *SUB_UNS_OP_16_3_16
+                DW01_sub_width16
+    PreProcessor
+        *LEQ_UNS_OP_16_16_1
+            ...
+        DATA_PISO
+        KEY_PISO
+        StepDownCountLd_N16_step4
+            ...
+    fwft_fifo_G_W32_G_LOG2DEPTH2
+        *ADD_TC_OP_2_2_2
+            DW01_inc_width2
+        *ADD_TC_OP_3_2_3
+            DW01_inc_width3
+        *GEQ_TC_OP_3_3_1
+            DW01_cmp2_width3
+        *GEQ_TC_OP_4_4_1
+            DW01_cmp2_width4
+        *LEQ_TC_OP_4_1_1
+            DW01_cmp2_width4
+        *SUB_TC_OP_3_2_3
+            DW01_dec_width3
+ 
+****************************************
+Report : constraint
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:42:50 2023
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)            0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                 414.72 (VIOLATED)
+    max_capacitance                              998474.88
+                                                          (VIOLATED)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+
+
+ 
+****************************************
+Report : cell
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:42:57 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Inst_Cipher               CryptoCore                      0.000000  h, n, u
+Inst_Header_Fifo          fwft_fifo_G_W32_G_LOG2DEPTH2    0.000000  h, n, p, u
+Inst_PostProcessor        PostProcessor                   0.000000  h, n, u
+Inst_PreProcessor         PreProcessor                    0.000000  h, n, u
+--------------------------------------------------------------------------------
+Total 4 cells                                             0.000000
+ 
+****************************************
+Report : area
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:43:03 2023
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /opt/cec/synopsys/syn/Q-2019.12-SP5/libraries/syn/gtech.db)
+
+Number of ports:                         3198
+Number of nets:                          9919
+Number of cells:                         5835
+Number of combinational cells:           3251
+Number of sequential cells:              2489
+Number of macros/black boxes:               0
+Number of buf/inv:                        802
+Number of references:                       4
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:            8464.011250
+
+Total cell area:                     0.000000
+Total area:                       8464.011250
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:43:11 2023
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /opt/cec/synopsys/syn/Q-2019.12-SP5/libraries/syn/gtech.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC                    ForQA             saed90nm_typ_ht
+PreProcessor           ForQA             saed90nm_typ_ht
+CryptoCore             ForQA             saed90nm_typ_ht
+PostProcessor          ForQA             saed90nm_typ_ht
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       ForQA             saed90nm_typ_ht
+StepDownCountLd_N16_step4
+                       ForQA             saed90nm_typ_ht
+KEY_PISO               ForQA             saed90nm_typ_ht
+DATA_PISO              ForQA             saed90nm_typ_ht
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       ForQA             saed90nm_typ_ht
+xoodoo_round           ForQA             saed90nm_typ_ht
+counter_num_bits4      ForQA             saed90nm_typ_ht
+counter_num_bits5      ForQA             saed90nm_typ_ht
+cyclist_ops            ForQA             saed90nm_typ_ht
+DATA_SIPO              ForQA             saed90nm_typ_ht
+*LEQ_UNS_OP_16_16_1    ForQA             saed90nm_typ_ht
+DW01_cmp2_width16      ForQA             saed90nm_typ_ht
+*LT_TC_OP_32_5_1       ForQA             saed90nm_typ_ht
+DW01_cmp2_width32      ForQA             saed90nm_typ_ht
+*LT_TC_OP_32_4_1       ForQA             saed90nm_typ_ht
+DW01_cmp2_width32      ForQA             saed90nm_typ_ht
+*LEQ_TC_OP_32_3_1      ForQA             saed90nm_typ_ht
+DW01_cmp2_width32      ForQA             saed90nm_typ_ht
+*NE_UNS_OP_32_32_1     ForQA             saed90nm_typ_ht
+DW01_cmp6_width32      ForQA             saed90nm_typ_ht
+DW01_cmp6_width32      ForQA             saed90nm_typ_ht
+DW01_cmp2_width16      ForQA             saed90nm_typ_ht
+*GEQ_TC_OP_4_4_1       ForQA             saed90nm_typ_ht
+DW01_cmp2_width4       ForQA             saed90nm_typ_ht
+*LEQ_TC_OP_4_1_1       ForQA             saed90nm_typ_ht
+DW01_cmp2_width4       ForQA             saed90nm_typ_ht
+*ADD_TC_OP_3_2_3       ForQA             saed90nm_typ_ht
+DW01_inc_width3        ForQA             saed90nm_typ_ht
+*SUB_TC_OP_3_2_3       ForQA             saed90nm_typ_ht
+DW01_dec_width3        ForQA             saed90nm_typ_ht
+*GEQ_TC_OP_3_3_1       ForQA             saed90nm_typ_ht
+DW01_cmp2_width3       ForQA             saed90nm_typ_ht
+*ADD_TC_OP_2_2_2       ForQA             saed90nm_typ_ht
+DW01_inc_width2        ForQA             saed90nm_typ_ht
+DW01_cmp2_width3       ForQA             saed90nm_typ_ht
+DW01_inc_width2        ForQA             saed90nm_typ_ht
+*SUB_UNS_OP_16_3_16    ForQA             saed90nm_typ_ht
+DW01_sub_width16       ForQA             saed90nm_typ_ht
+*ADD_UNS_OP_4_1_4      ForQA             saed90nm_typ_ht
+DW01_inc_width4        ForQA             saed90nm_typ_ht
+*ADD_UNS_OP_5_1_5      ForQA             saed90nm_typ_ht
+DW01_inc_width5        ForQA             saed90nm_typ_ht
+DW01_inc_width4        ForQA             saed90nm_typ_ht
+DW01_sub_width16       ForQA             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  22.7024 uW  (100%)
+                         ---------
+Total Dynamic Power    =  22.7024 uW  (100%)
+
+Cell Leakage Power     =   0.0000 pW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.6018            0.0000            0.6018  (   2.65%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           22.1007            0.0000           22.1007  (  97.35%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        22.7024 uW         0.0000 pW        22.7024 uW
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : wire loads
+Design : counter
+Version: Q-2019.12-SP5
+Date   : Wed May 17 19:43:26 2023
+****************************************
+
+Wire load model:   ForQA
+Location       :   counter (design)
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1     8.28                                    
+     2    18.49                                    
+     3    29.35                                    
+     4    40.92                                    
+     5    53.23                                    
+     6    66.36                                    
+     7    80.36                                    
+     8    95.27                                    
+     9   111.17                                    
+    10   128.09                                    
+    11   146.10                                    
+    12   165.26                                    
+    13   185.61                                    
+    14   207.22                                    
+    15   230.13                                    
+    16   254.41                                    
+    17   280.11                                    
+    18   307.28                                    
+    19   335.98                                    
+    20   366.27                                    
+--------------------------------------------------------------
+
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:27:03 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/cyc_s_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Inst_Cipher/UUT_RAM/RAM_reg[8][60]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC                280000                saed90nm_typ_ht
+  CryptoCore_1       280000                saed90nm_typ_ht
+  DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                     140000                saed90nm_typ_ht
+  xoodoo_round_ADDRESS_LEN128_ADDRESS_ENTRIES16_ADDRESS_ENTRIES_BITs4
+                     35000                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Inst_Cipher/cyc_s_reg[2]/CLK (DFFX1)                    0.00 #     0.00 r
+  Inst_Cipher/cyc_s_reg[2]/QN (DFFX1)                     0.26       0.26 f
+  Inst_Cipher/U3/Q (AND2X1)                               0.61       0.87 f
+  Inst_Cipher/U188/QN (NAND2X0)                           0.44       1.31 r
+  Inst_Cipher/U353/Q (OA21X1)                             0.50       1.81 r
+  Inst_Cipher/U352/Q (AND2X1)                             0.55       2.37 r
+  Inst_Cipher/U146/Q (AND4X1)                             0.46       2.83 r
+  Inst_Cipher/U419/QN (NOR2X0)                            0.73       3.56 f
+  Inst_Cipher/U397/Q (AO22X2)                             0.51       4.08 f
+  Inst_Cipher/UUT_RAM/RAMADDR1[0] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       4.08 f
+  Inst_Cipher/UUT_RAM/U2306/ZN (INVX0)                    0.67       4.75 r
+  Inst_Cipher/UUT_RAM/U2697/Q (AND2X2)                    0.62       5.37 r
+  Inst_Cipher/UUT_RAM/U3296/Q (AND2X4)                    0.72       6.09 r
+  Inst_Cipher/UUT_RAM/U2258/Z (NBUFFX2)                   0.75       6.84 r
+  Inst_Cipher/UUT_RAM/U4414/Q (AO22X1)                    0.81       7.65 r
+  Inst_Cipher/UUT_RAM/U4415/Q (AO221X1)                   0.64       8.29 r
+  Inst_Cipher/UUT_RAM/U2525/Q (OR4X2)                     0.75       9.04 r
+  Inst_Cipher/UUT_RAM/RAMDOUT1[60] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       9.04 r
+  Inst_Cipher/XOODOO_PERM/RAMA[60] (xoodoo_round_ADDRESS_LEN128_ADDRESS_ENTRIES16_ADDRESS_ENTRIES_BITs4)
+                                                          0.00       9.04 r
+  Inst_Cipher/XOODOO_PERM/U435/ZN (INVX0)                 0.60       9.65 f
+  Inst_Cipher/XOODOO_PERM/U560/ZN (INVX0)                 0.09       9.74 r
+  Inst_Cipher/XOODOO_PERM/U482/Q (XNOR2X1)                0.24       9.98 r
+  Inst_Cipher/XOODOO_PERM/U1483/Q (AO22X1)                0.16      10.15 r
+  Inst_Cipher/XOODOO_PERM/U1484/Q (AO221X1)               0.16      10.30 r
+  Inst_Cipher/XOODOO_PERM/U1485/QN (OAI21X1)              0.18      10.48 f
+  Inst_Cipher/XOODOO_PERM/U1487/QN (NAND3X0)              0.09      10.58 r
+  Inst_Cipher/XOODOO_PERM/perm_output[60] (xoodoo_round_ADDRESS_LEN128_ADDRESS_ENTRIES16_ADDRESS_ENTRIES_BITs4)
+                                                          0.00      10.58 r
+  Inst_Cipher/U113/Q (AO22X2)                             0.57      11.15 r
+  Inst_Cipher/UUT_RAM/RAMDIN1[60] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00      11.15 r
+  Inst_Cipher/UUT_RAM/U1000/Q (AO22X1)                    1.67      12.82 r
+  Inst_Cipher/UUT_RAM/RAM_reg[8][60]/D (DFFX1)            0.33      13.15 r
+  data arrival time                                                 13.15
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.40       9.60
+  Inst_Cipher/UUT_RAM/RAM_reg[8][60]/CLK (DFFX1)          0.00       9.60 r
+  library setup time                                     -0.11       9.49
+  data required time                                                 9.49
+  --------------------------------------------------------------------------
+  data required time                                                 9.49
+  data arrival time                                                -13.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.66
+
+
+ 
+****************************************
+Report : area
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:27:11 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                         2198
+Number of nets:                         13756
+Number of cells:                        11608
+Number of combinational cells:           9334
+Number of sequential cells:              2255
+Number of macros/black boxes:               0
+Number of buf/inv:                       2105
+Number of references:                       4
+
+Combinational area:              99350.322544
+Buf/Inv area:                    14037.811462
+Noncombinational area:           56119.909706
+Macro/Black Box area:                0.000000
+Net Interconnect area:           17461.577454
+
+Total cell area:                155470.232250
+Total area:                     172931.809704
+Loading db file '/home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:27:20 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC                    280000            saed90nm_typ_ht
+PreProcessor_1         8000              saed90nm_typ_ht
+CryptoCore_1           280000            saed90nm_typ_ht
+PostProcessor_1        8000              saed90nm_typ_ht
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       8000              saed90nm_typ_ht
+StepDownCountLd_N16_step4_1_0
+                       8000              saed90nm_typ_ht
+KEY_PISO_1             ForQA             saed90nm_typ_ht
+DATA_PISO_1            ForQA             saed90nm_typ_ht
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       140000            saed90nm_typ_ht
+xoodoo_round_ADDRESS_LEN128_ADDRESS_ENTRIES16_ADDRESS_ENTRIES_BITs4
+                       35000             saed90nm_typ_ht
+counter_num_bits4_0    8000              saed90nm_typ_ht
+counter_num_bits5      8000              saed90nm_typ_ht
+cyclist_ops_RAM_LEN128_DATA_LEN32
+                       8000              saed90nm_typ_ht
+DATA_SIPO_1            ForQA             saed90nm_typ_ht
+counter_num_bits4_1    8000              saed90nm_typ_ht
+StepDownCountLd_N16_step4_1_1
+                       8000              saed90nm_typ_ht
+CryptoCore_1_DW01_cmp6_0
+                       8000              saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 351.0226 uW   (86%)
+  Net Switching Power  =  57.7231 uW   (14%)
+                         ---------
+Total Dynamic Power    = 408.7457 uW  (100%)
+
+Cell Leakage Power     =   2.6812 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         168.3687            1.9417        9.5526e+08        1.1256e+03  (  36.43%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    182.6539           55.7812        1.7259e+09        1.9643e+03  (  63.57%)
+--------------------------------------------------------------------------------------------------
+Total            351.0226 uW        57.7229 uW     2.6812e+09 pW     3.0899e+03 uW
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:32:30 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/cyc_s_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Inst_Cipher/UUT_RAM/RAM_reg[7][40]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC                280000                saed90nm_typ_ht
+  CryptoCore_1       140000                saed90nm_typ_ht
+  DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                     140000                saed90nm_typ_ht
+  cyclist_ops_RAM_LEN128_DATA_LEN32
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Inst_Cipher/cyc_s_reg[1]/CLK (DFFX2)                    0.00 #     0.00 r
+  Inst_Cipher/cyc_s_reg[1]/QN (DFFX2)                     0.28       0.28 r
+  Inst_Cipher/U210/Q (AND3X1)                             0.63       0.91 r
+  Inst_Cipher/U356/QN (AOI21X1)                           0.56       1.47 f
+  Inst_Cipher/U12/Q (AND2X4)                              0.56       2.03 f
+  Inst_Cipher/U151/QN (NAND3X1)                           0.50       2.53 r
+  Inst_Cipher/U88/Q (AND3X1)                              0.37       2.90 r
+  Inst_Cipher/U149/Q (AO22X2)                             0.48       3.39 r
+  Inst_Cipher/UUT_RAM/RAMADDR1[0] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       3.39 r
+  Inst_Cipher/UUT_RAM/U3213/ZN (INVX0)                    0.65       4.04 f
+  Inst_Cipher/UUT_RAM/U3260/QN (NOR2X0)                   0.53       4.57 r
+  Inst_Cipher/UUT_RAM/U236/Q (AND2X4)                     0.54       5.11 r
+  Inst_Cipher/UUT_RAM/U1061/ZN (IBUFFX16)                 1.16       6.27 f
+  Inst_Cipher/UUT_RAM/U5622/Q (OA22X1)                    0.93       7.20 f
+  Inst_Cipher/UUT_RAM/U5621/Q (OA221X1)                   0.43       7.63 f
+  Inst_Cipher/UUT_RAM/U5614/QN (NAND4X0)                  0.55       8.18 r
+  Inst_Cipher/UUT_RAM/RAMDOUT1[72] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       8.18 r
+  Inst_Cipher/cyc_ops/ramoutd1[72] (cyclist_ops_RAM_LEN128_DATA_LEN32)
+                                                          0.00       8.18 r
+  Inst_Cipher/cyc_ops/U126/Q (AO22X1)                     0.61       8.79 r
+  Inst_Cipher/cyc_ops/U239/Q (AO221X1)                    0.17       8.96 r
+  Inst_Cipher/cyc_ops/U402/QN (NAND2X0)                   0.09       9.05 f
+  Inst_Cipher/cyc_ops/U386/QN (NAND2X0)                   0.13       9.18 r
+  Inst_Cipher/cyc_ops/U34/Q (XOR2X1)                      0.20       9.38 r
+  Inst_Cipher/cyc_ops/U215/Q (AO222X1)                    0.17       9.55 r
+  Inst_Cipher/cyc_ops/U23/Q (AO221X1)                     0.18       9.73 r
+  Inst_Cipher/cyc_ops/U428/Q (AO22X1)                     0.17       9.90 r
+  Inst_Cipher/cyc_ops/cyc_state_update[40] (cyclist_ops_RAM_LEN128_DATA_LEN32)
+                                                          0.00       9.90 r
+  Inst_Cipher/U198/Q (AO22X2)                             0.49      10.39 r
+  Inst_Cipher/UUT_RAM/RAMDIN1[40] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00      10.39 r
+  Inst_Cipher/UUT_RAM/U2423/Z (NBUFFX2)                   0.68      11.07 r
+  Inst_Cipher/UUT_RAM/U1288/Q (AO22X2)                    0.61      11.68 r
+  Inst_Cipher/UUT_RAM/RAM_reg[7][40]/D (DFFX1)            0.33      12.01 r
+  data arrival time                                                 12.01
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.40       7.60
+  Inst_Cipher/UUT_RAM/RAM_reg[7][40]/CLK (DFFX1)          0.00       7.60 r
+  library setup time                                     -0.12       7.48
+  data required time                                                 7.48
+  --------------------------------------------------------------------------
+  data required time                                                 7.48
+  data arrival time                                                -12.01
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -4.53
+
+
+ 
+****************************************
+Report : area
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:33:04 2023
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                         2198
+Number of nets:                         15862
+Number of cells:                        11644
+Number of combinational cells:           9370
+Number of sequential cells:              2255
+Number of macros/black boxes:               0
+Number of buf/inv:                       2404
+Number of references:                       4
+
+Combinational area:              95568.998838
+Buf/Inv area:                    15647.846736
+Noncombinational area:           56126.360907
+Macro/Black Box area:                0.000000
+Net Interconnect area:           16022.452175
+
+Total cell area:                151695.359745
+Total area:                     167717.811920
+Loading db file '/home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:33:13 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/bsheikmu/icc/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC                    280000            saed90nm_typ_ht
+PreProcessor_1         8000              saed90nm_typ_ht
+CryptoCore_1           140000            saed90nm_typ_ht
+PostProcessor_1        8000              saed90nm_typ_ht
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       8000              saed90nm_typ_ht
+StepDownCountLd_N16_step4_1_0
+                       8000              saed90nm_typ_ht
+KEY_PISO_1             ForQA             saed90nm_typ_ht
+DATA_PISO_1            ForQA             saed90nm_typ_ht
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       140000            saed90nm_typ_ht
+xoodoo_round_ADDRESS_LEN128_ADDRESS_ENTRIES16_ADDRESS_ENTRIES_BITs4
+                       16000             saed90nm_typ_ht
+counter_num_bits4_0    8000              saed90nm_typ_ht
+counter_num_bits5      8000              saed90nm_typ_ht
+counter_num_bits4_1    8000              saed90nm_typ_ht
+cyclist_ops_RAM_LEN128_DATA_LEN32
+                       8000              saed90nm_typ_ht
+CryptoCore_1_DW01_cmp6_0
+                       8000              saed90nm_typ_ht
+StepDownCountLd_N16_step4_1_1
+                       8000              saed90nm_typ_ht
+DATA_SIPO_1            ForQA             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 416.5735 uW   (86%)
+  Net Switching Power  =  68.9291 uW   (14%)
+                         ---------
+Total Dynamic Power    = 485.5027 uW  (100%)
+
+Cell Leakage Power     =   2.5503 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         181.2512            2.5977        9.2680e+08        1.1106e+03  (  36.59%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    235.3266           66.3317        1.6235e+09        1.9251e+03  (  63.41%)
+--------------------------------------------------------------------------------------------------
+Total            416.5778 uW        68.9294 uW     2.5503e+09 pW     3.0358e+03 uW
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC_1' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:42:10 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_Cipher/key_update_internal_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Inst_Cipher/tag_verified_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC_1              70000                 saed32rvt_tt1p05v25c
+  CryptoCore         70000                 saed32rvt_tt1p05v25c
+  DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                     35000                 saed32rvt_tt1p05v25c
+  cyclist_ops        8000                  saed32rvt_tt1p05v25c
+  CryptoCore_DW01_cmp6_0
+                     ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Inst_Cipher/key_update_internal_reg[0]/CLK (DFFX1_RVT)
+                                                          0.00 #     0.00 r
+  Inst_Cipher/key_update_internal_reg[0]/Q (DFFX1_RVT)
+                                                          0.11       0.11 r
+  Inst_Cipher/U357/Y (NAND2X0_RVT)                        0.21       0.32 f
+  Inst_Cipher/U33/Y (OR2X4_RVT)                           0.79       1.11 f
+  Inst_Cipher/U356/Y (NAND2X0_RVT)                        0.71       1.82 r
+  Inst_Cipher/U517/Y (IBUFFX4_RVT)                        0.17       1.99 f
+  Inst_Cipher/U28/Y (NAND4X1_RVT)                         0.82       2.82 r
+  Inst_Cipher/U521/Y (IBUFFX8_RVT)                        0.18       3.00 f
+  Inst_Cipher/U31/Y (AO22X1_RVT)                          0.62       3.62 f
+  Inst_Cipher/UUT_RAM/RAMADDR1[0] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       3.62 f
+  Inst_Cipher/UUT_RAM/U602/Y (NBUFFX4_RVT)                0.16       3.78 f
+  Inst_Cipher/UUT_RAM/U317/Y (AND2X4_RVT)                 0.12       3.90 f
+  Inst_Cipher/UUT_RAM/U1314/Y (AND2X1_RVT)                0.10       4.00 f
+  Inst_Cipher/UUT_RAM/U453/Y (NBUFFX4_RVT)                0.34       4.34 f
+  Inst_Cipher/UUT_RAM/U5845/Y (AO22X1_RVT)                0.51       4.85 f
+  Inst_Cipher/UUT_RAM/U5846/Y (AO221X1_RVT)               0.10       4.95 f
+  Inst_Cipher/UUT_RAM/U5849/Y (OR4X1_RVT)                 0.18       5.13 f
+  Inst_Cipher/UUT_RAM/RAMDOUT1[55] (DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4)
+                                                          0.00       5.13 f
+  Inst_Cipher/cyc_ops/ramoutd1[55] (cyclist_ops)          0.00       5.13 f
+  Inst_Cipher/cyc_ops/U23/Y (INVX1_RVT)                   1.05       6.18 r
+  Inst_Cipher/cyc_ops/U193/Y (OAI22X1_RVT)                0.07       6.25 f
+  Inst_Cipher/cyc_ops/U9/Y (AOI221X2_RVT)                 0.11       6.36 r
+  Inst_Cipher/cyc_ops/U4/Y (OA22X1_RVT)                   0.05       6.41 r
+  Inst_Cipher/cyc_ops/U3/Y (XOR2X1_RVT)                   0.10       6.52 f
+  Inst_Cipher/cyc_ops/U132/Y (AO22X2_RVT)                 0.12       6.63 f
+  Inst_Cipher/cyc_ops/bdo_out[23] (cyclist_ops)           0.00       6.63 f
+  Inst_Cipher/r195/B[23] (CryptoCore_DW01_cmp6_0)         0.00       6.63 f
+  Inst_Cipher/r195/U42/Y (XNOR2X1_RVT)                    1.27       7.90 r
+  Inst_Cipher/r195/U4/Y (NAND4X1_RVT)                     0.08       7.97 f
+  Inst_Cipher/r195/U2/Y (NOR2X0_RVT)                      0.09       8.07 r
+  Inst_Cipher/r195/U22/Y (NAND2X0_RVT)                    0.03       8.10 f
+  Inst_Cipher/r195/NE (CryptoCore_DW01_cmp6_0)            0.00       8.10 f
+  Inst_Cipher/U37/Y (IBUFFX4_RVT)                         0.15       8.25 r
+  Inst_Cipher/U34/Y (OR3X1_RVT)                           0.13       8.38 r
+  Inst_Cipher/U367/Y (NAND2X0_RVT)                        0.12       8.50 f
+  Inst_Cipher/U8/Y (AND3X2_RVT)                           0.46       8.96 f
+  Inst_Cipher/tag_verified_reg/SETB (DFFSSRX1_RVT)        0.47       9.43 f
+  data arrival time                                                  9.43
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.40       9.60
+  Inst_Cipher/tag_verified_reg/CLK (DFFSSRX1_RVT)         0.00       9.60 r
+  library setup time                                     -0.16       9.44
+  data required time                                                 9.44
+  --------------------------------------------------------------------------
+  data required time                                                 9.44
+  data arrival time                                                 -9.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+ 
+****************************************
+Report : area
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:42:19 2023
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/bsheikmu/standard_cells_SAED/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                         2198
+Number of nets:                         15887
+Number of cells:                        13632
+Number of combinational cells:          11355
+Number of sequential cells:              2255
+Number of macros/black boxes:               0
+Number of buf/inv:                       4168
+Number of references:                       4
+
+Combinational area:              25459.383503
+Buf/Inv area:                     5863.610444
+Noncombinational area:           14909.866535
+Macro/Black Box area:                0.000000
+Net Interconnect area:           13597.105583
+
+Total cell area:                 40369.250038
+Total area:                      53966.355621
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:42:25 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/bsheikmu/standard_cells_SAED/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC_1                  70000             saed32rvt_tt1p05v25c
+PreProcessor           8000              saed32rvt_tt1p05v25c
+CryptoCore             70000             saed32rvt_tt1p05v25c
+PostProcessor          8000              saed32rvt_tt1p05v25c
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       8000              saed32rvt_tt1p05v25c
+StepDownCountLd_N16_step4_0
+                       8000              saed32rvt_tt1p05v25c
+KEY_PISO               ForQA             saed32rvt_tt1p05v25c
+DATA_PISO              ForQA             saed32rvt_tt1p05v25c
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       35000             saed32rvt_tt1p05v25c
+xoodoo_round           8000              saed32rvt_tt1p05v25c
+counter_num_bits4_0    ForQA             saed32rvt_tt1p05v25c
+counter_num_bits5      ForQA             saed32rvt_tt1p05v25c
+cyclist_ops            8000              saed32rvt_tt1p05v25c
+DATA_SIPO              ForQA             saed32rvt_tt1p05v25c
+counter_num_bits4_1    ForQA             saed32rvt_tt1p05v25c
+StepDownCountLd_N16_step4_1
+                       8000              saed32rvt_tt1p05v25c
+CryptoCore_DW01_cmp6_0 ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  65.0721 uW  (100%)
+                         ---------
+Total Dynamic Power    =  65.0721 uW  (100%)
+
+Cell Leakage Power     =   1.0384 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            1.9307        3.1773e+08          319.6650  (  28.97%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           63.1411        7.2065e+08          783.7953  (  71.03%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        65.0718 uW     1.0384e+09 pW     1.1035e+03 uW
+Information: Updating design information... (UID-85)
+Warning: Design 'LWC_1' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:45:08 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Inst_PreProcessor/pr_state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Inst_Cipher/tag_verified_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LWC_1              70000                 saed32rvt_tt1p05v25c
+  PreProcessor       8000                  saed32rvt_tt1p05v25c
+  CryptoCore         35000                 saed32rvt_tt1p05v25c
+  cyclist_ops        8000                  saed32rvt_tt1p05v25c
+  CryptoCore_DW01_cmp6_0
+                     ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Inst_PreProcessor/pr_state_reg[0]/CLK (DFFSSRX1_RVT)
+                                                          0.00 #     0.00 r
+  Inst_PreProcessor/pr_state_reg[0]/QN (DFFSSRX1_RVT)     0.15       0.15 f
+  Inst_PreProcessor/U33/Y (AND4X1_RVT)                    0.15       0.30 f
+  Inst_PreProcessor/U17/Y (INVX1_RVT)                     0.11       0.41 r
+  Inst_PreProcessor/U4/Y (NAND2X0_RVT)                    0.11       0.52 f
+  Inst_PreProcessor/U3/Y (INVX1_RVT)                      0.90       1.42 r
+  Inst_PreProcessor/U6/Y (NAND3X0_RVT)                    0.15       1.58 f
+  Inst_PreProcessor/bdi_type[2] (PreProcessor)            0.00       1.58 f
+  Inst_Cipher/bdi_type[2] (CryptoCore)                    0.00       1.58 f
+  Inst_Cipher/U39/Y (NBUFFX2_RVT)                         0.69       2.26 f
+  Inst_Cipher/U353/Y (AND2X1_RVT)                         0.11       2.37 f
+  Inst_Cipher/U349/Y (AND3X1_RVT)                         0.09       2.46 f
+  Inst_Cipher/U348/Y (AO221X1_RVT)                        0.11       2.57 f
+  Inst_Cipher/U334/Y (AND2X1_RVT)                         0.11       2.68 f
+  Inst_Cipher/U59/Y (INVX1_RVT)                           0.10       2.78 r
+  Inst_Cipher/U345/Y (INVX1_RVT)                          0.03       2.81 f
+  Inst_Cipher/U58/Y (AND4X1_RVT)                          0.10       2.91 f
+  Inst_Cipher/U517/Y (AO21X1_RVT)                         0.14       3.06 f
+  Inst_Cipher/cyc_ops/extract_sel (cyclist_ops)           0.00       3.06 f
+  Inst_Cipher/cyc_ops/U42/Y (INVX1_RVT)                   1.05       4.10 r
+  Inst_Cipher/cyc_ops/U41/Y (INVX1_RVT)                   0.03       4.14 f
+  Inst_Cipher/cyc_ops/U460/Y (INVX0_RVT)                  0.08       4.21 r
+  Inst_Cipher/cyc_ops/U342/Y (NBUFFX2_RVT)                0.04       4.26 r
+  Inst_Cipher/cyc_ops/U568/Y (INVX1_RVT)                  0.09       4.34 f
+  Inst_Cipher/cyc_ops/U315/Y (NAND2X0_RVT)                0.12       4.46 r
+  Inst_Cipher/cyc_ops/U409/Y (INVX1_RVT)                  0.05       4.51 f
+  Inst_Cipher/cyc_ops/U404/Y (XNOR2X1_RVT)                0.21       4.72 f
+  Inst_Cipher/cyc_ops/bdo_out[28] (cyclist_ops)           0.00       4.72 f
+  Inst_Cipher/r195/B[28] (CryptoCore_DW01_cmp6_0)         0.00       4.72 f
+  Inst_Cipher/r195/U54/Y (XNOR2X1_RVT)                    1.27       5.99 r
+  Inst_Cipher/r195/U30/Y (NAND4X0_RVT)                    0.08       6.06 f
+  Inst_Cipher/r195/U21/Y (OR3X2_RVT)                      0.11       6.17 f
+  Inst_Cipher/r195/U18/Y (NOR2X0_RVT)                     0.10       6.27 r
+  Inst_Cipher/r195/U14/Y (NAND2X0_RVT)                    0.08       6.35 f
+  Inst_Cipher/r195/NE (CryptoCore_DW01_cmp6_0)            0.00       6.35 f
+  Inst_Cipher/U279/Y (AND3X1_RVT)                         0.11       6.46 f
+  Inst_Cipher/U278/Y (OA21X1_RVT)                         0.09       6.55 f
+  Inst_Cipher/U558/Y (AND4X1_RVT)                         0.09       6.64 f
+  Inst_Cipher/tag_verified_reg/SETB (DFFSSRX1_RVT)        0.05       6.70 f
+  data arrival time                                                  6.70
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  clock uncertainty                                      -0.40       7.60
+  Inst_Cipher/tag_verified_reg/CLK (DFFSSRX1_RVT)         0.00       7.60 r
+  library setup time                                     -0.16       7.44
+  data required time                                                 7.44
+  --------------------------------------------------------------------------
+  data required time                                                 7.44
+  data arrival time                                                 -6.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.75
+
+
+ 
+****************************************
+Report : area
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:45:14 2023
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/bsheikmu/standard_cells_SAED/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                         2198
+Number of nets:                         18378
+Number of cells:                        14162
+Number of combinational cells:          11885
+Number of sequential cells:              2255
+Number of macros/black boxes:               0
+Number of buf/inv:                       4858
+Number of references:                       4
+
+Combinational area:              25137.891429
+Buf/Inv area:                     6895.689269
+Noncombinational area:           14907.325096
+Macro/Black Box area:                0.000000
+Net Interconnect area:           12312.605910
+
+Total cell area:                 40045.216525
+Total area:                      52357.822434
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : LWC_1
+Version: Q-2019.12-SP5
+Date   : Wed May 17 20:45:19 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/bsheikmu/standard_cells_SAED/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+LWC_1                  70000             saed32rvt_tt1p05v25c
+PreProcessor           8000              saed32rvt_tt1p05v25c
+CryptoCore             35000             saed32rvt_tt1p05v25c
+PostProcessor          8000              saed32rvt_tt1p05v25c
+fwft_fifo_G_W32_G_LOG2DEPTH2
+                       8000              saed32rvt_tt1p05v25c
+StepDownCountLd_N16_step4_0
+                       8000              saed32rvt_tt1p05v25c
+KEY_PISO               ForQA             saed32rvt_tt1p05v25c
+DATA_PISO              ForQA             saed32rvt_tt1p05v25c
+DUAL_PORT_RAM_32_BIT_ADDRESS_LEN128_ADDR_ENTRIES16_ADD_ENT_BITS4
+                       35000             saed32rvt_tt1p05v25c
+xoodoo_round           8000              saed32rvt_tt1p05v25c
+counter_num_bits4_0    ForQA             saed32rvt_tt1p05v25c
+counter_num_bits5      ForQA             saed32rvt_tt1p05v25c
+counter_num_bits4_1    ForQA             saed32rvt_tt1p05v25c
+cyclist_ops            8000              saed32rvt_tt1p05v25c
+CryptoCore_DW01_cmp6_0 ForQA             saed32rvt_tt1p05v25c
+StepDownCountLd_N16_step4_1
+                       8000              saed32rvt_tt1p05v25c
+DATA_SIPO              ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  75.7301 uW  (100%)
+                         ---------
+Total Dynamic Power    =  75.7301 uW  (100%)
+
+Cell Leakage Power     =   1.1026 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            2.9934        3.1773e+08          320.7276  (  27.22%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           72.7367        7.8488e+08          857.6129  (  72.78%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        75.7301 uW     1.1026e+09 pW     1.1783e+03 uW
